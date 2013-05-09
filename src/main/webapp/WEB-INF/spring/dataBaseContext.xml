@@ -20,8 +20,8 @@
 		name="userTransaction" ref="jotm" /> </bean> <bean id="jdbcdmc" class="org.enhydra.jdbc.pool.StandardXAPoolDataSource" 
 		destroy-method="shutdown"> <property name="transactionManager" ref="jotm" 
 		/> </bean> -->
-
-	<bean id="datasource" class="com.atomikos.jdbc.AtomikosDataSourceBean" init-method="init" destroy-method="close">
+		
+	<bean id="datasource" name="datasource" class="com.atomikos.jdbc.AtomikosDataSourceBean" init-method="init" destroy-method="close">
 		<property name="uniqueResourceName">
 			<value>jdbcdmc</value>
 		</property>
@@ -31,7 +31,7 @@
 		</property>
 		<property name="xaProperties">
 			<props>
-				<prop key="URL">jdbc:mysql://localhost:3306/test?useUnicode=true&amp;characterEncoding=utf-8
+				<prop key="URL">jdbc:mysql://172.16.97.35:3306/dmc?useUnicode=true&amp;characterEncoding=utf-8
 				</prop>
 				<!-- jdbc\:mysql\://127.0.0.1\:3306/dataBaseName?autoReconnect\=true -->
 				<prop key="user">root</prop>

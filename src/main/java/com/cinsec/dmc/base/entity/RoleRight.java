@@ -34,9 +34,10 @@ public class RoleRight implements Serializable{
 
 	//ID
 	@Id
-	@GeneratedValue(strategy=GenerationType.SEQUENCE, generator="MSSQ_ROLE_RIGHT_OR")
-	@SequenceGenerator(name="MSSQ_ROLE_RIGHT_OR", sequenceName="MSSQ_ROLE_RIGHT", 
-			initialValue=1, allocationSize=1)
+//	@GeneratedValue(strategy=GenerationType.SEQUENCE, generator="MSSQ_ROLE_RIGHT_OR")
+	@GeneratedValue(strategy=GenerationType.AUTO)
+//	@SequenceGenerator(name="MSSQ_ROLE_RIGHT_OR", sequenceName="MSSQ_ROLE_RIGHT", 
+//			initialValue=1, allocationSize=1)
 	@Column(name="ROLE_RIGHT_ID")
 	private Long roleRightId;
 	

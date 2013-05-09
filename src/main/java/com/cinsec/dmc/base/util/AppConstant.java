@@ -78,7 +78,7 @@ public interface AppConstant {
     public static final String AND_SIGN = "&";
 
     // 默认Schema
-    public static final String APP_DEAULT_SCHEMA = "amway";
+    public static final String APP_DEAULT_SCHEMA = "dmc";
 
     // 当前应用
     public static final String APPLICATION_NAME = "_application_";

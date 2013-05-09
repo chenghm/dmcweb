@@ -7,6 +7,6 @@
 	<import resource="dataBaseContext.xml"/>
 
 	<!--加载base模板 -->
-	<import resource="baseContext.xml" />
+<!-- 	<import resource="baseContext.xml" /> -->
 
 </beans>

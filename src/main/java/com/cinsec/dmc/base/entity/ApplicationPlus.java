@@ -28,9 +28,10 @@ public class ApplicationPlus implements java.io.Serializable {
 	private static final long serialVersionUID = 3102423902018337530L;
 	//自动生成ID
 	@Id
-    @GeneratedValue(strategy=GenerationType.SEQUENCE, generator="MSSQ_APPLICATION_OR")
-	@SequenceGenerator(name="MSSQ_APPLICATION_OR", sequenceName="MSSQ_APPLICATION_PLUS",
-			initialValue=1, allocationSize=1)
+//    @GeneratedValue(strategy=GenerationType.SEQUENCE, generator="MSSQ_APPLICATION_OR")
+//	@SequenceGenerator(name="MSSQ_APPLICATION_OR", sequenceName="MSSQ_APPLICATION_PLUS",
+//			initialValue=1, allocationSize=1)
+	@GeneratedValue(strategy=GenerationType.AUTO)
 	@Column(name = "APPLICATION_PLUS_ID")
 	private Long applicationPlusId;
 	

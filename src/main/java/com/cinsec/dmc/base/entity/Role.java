@@ -33,9 +33,10 @@ public class Role implements Serializable{
 	
 	//角色ID
 	@Id
-	@GeneratedValue(strategy=GenerationType.SEQUENCE, generator="MSSQ_ROLE_OR")
-	@SequenceGenerator(name="MSSQ_ROLE_OR", sequenceName="MSSQ_ROLE", 
-			initialValue=1, allocationSize=1)
+//	@GeneratedValue(strategy=GenerationType.SEQUENCE, generator="MSSQ_ROLE_OR")
+//	@SequenceGenerator(name="MSSQ_ROLE_OR", sequenceName="MSSQ_ROLE", 
+//			initialValue=1, allocationSize=1)
+	@GeneratedValue(strategy=GenerationType.AUTO)
 	@Column(name="ROLE_ID")
 	private Long roleId;
 	

@@ -45,9 +45,10 @@ public class Module implements Serializable, Comparable<Module>{
 	}
 	//模块ID
 	@Id
-	@GeneratedValue(strategy=GenerationType.SEQUENCE, generator="MSSQ_MODULE_OR")
-	@SequenceGenerator(name="MSSQ_MODULE_OR", sequenceName="MSSQ_MODULE", 
-			initialValue=1, allocationSize=1)
+//	@GeneratedValue(strategy=GenerationType.SEQUENCE, generator="MSSQ_MODULE_OR")
+//	@SequenceGenerator(name="MSSQ_MODULE_OR", sequenceName="MSSQ_MODULE", 
+//			initialValue=1, allocationSize=1)
+	@GeneratedValue(strategy=GenerationType.AUTO)
 	@Column(name="MODULE_ID")
 	private Long moduleId;
 	

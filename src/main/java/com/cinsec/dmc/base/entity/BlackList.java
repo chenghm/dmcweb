@@ -27,9 +27,10 @@ public class BlackList implements Serializable{
 	
 	//自动生成ID
 	@Id
-    @GeneratedValue(strategy=GenerationType.SEQUENCE, generator="MSSQ_BLACKLIST_OR")
-	@SequenceGenerator(name="MSSQ_BLACKLIST_OR", sequenceName="MSSQ_BLACKLIST",
-			initialValue=1, allocationSize=1)
+//    @GeneratedValue(strategy=GenerationType.SEQUENCE, generator="MSSQ_BLACKLIST_OR")
+//	@SequenceGenerator(name="MSSQ_BLACKLIST_OR", sequenceName="MSSQ_BLACKLIST",
+//			initialValue=1, allocationSize=1)
+	@GeneratedValue(strategy=GenerationType.AUTO)
 	@Column(name = "BLACKLIST_ID")
 	private Long blackListId;
 	//应用ID

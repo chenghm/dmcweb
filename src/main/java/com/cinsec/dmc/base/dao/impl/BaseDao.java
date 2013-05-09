@@ -22,16 +22,13 @@ import javax.persistence.Query;
 import javax.persistence.Transient;
 import javax.sql.DataSource;
 
+import com.atomikos.jdbc.AtomikosDataSourceBean;
 import com.cinsec.dmc.base.dao.IBaseDao;
 import com.cinsec.dmc.base.util.AppConstant;
 import com.cinsec.dmc.base.vo.SysInfoBean;
 import com.cinsec.dmc.base.vo.UniqueKey;
 
-/**
- * 
- * @author lenovo
- * 
- */
+
 @SuppressWarnings({ "rawtypes", "unchecked" })
 public class BaseDao<T extends Object, PK extends Serializable> implements IBaseDao<T, PK> {
 
@@ -52,7 +49,7 @@ public class BaseDao<T extends Object, PK extends Serializable> implements IBase
     }
 
     @Resource(mappedName = AppConstant.DATASOURCE_NAME)
-    private DataSource dataSource;
+    private AtomikosDataSourceBean dataSource;
 
     private Class<T> entityClass;
 

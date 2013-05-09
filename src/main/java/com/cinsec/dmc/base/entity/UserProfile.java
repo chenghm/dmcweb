@@ -37,9 +37,10 @@ public class UserProfile  implements Serializable{
 
 	//用户ID
 	@Id
-	@GeneratedValue(strategy=GenerationType.SEQUENCE, generator="MSSQ_USERPROFILE_OR")
-	@SequenceGenerator(name="MSSQ_USERPROFILE_OR", sequenceName="MSSQ_USERPROFILE", 
-			initialValue=1, allocationSize=1)
+//	@GeneratedValue(strategy=GenerationType.SEQUENCE, generator="MSSQ_USERPROFILE_OR")
+//	@SequenceGenerator(name="MSSQ_USERPROFILE_OR", sequenceName="MSSQ_USERPROFILE", 
+//			initialValue=1, allocationSize=1)
+	@GeneratedValue(strategy=GenerationType.AUTO)
 	@Column(name="USERPROFILE_ID")
 	private Long userProfileId;
 	
