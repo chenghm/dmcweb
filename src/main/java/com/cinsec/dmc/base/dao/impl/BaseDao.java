@@ -48,7 +48,7 @@ public class BaseDao<T extends Object, PK extends Serializable> implements IBase
         return t;
     }
 
-    @Resource(mappedName = AppConstant.DATASOURCE_NAME)
+//    @Resource(mappedName = AppConstant.DATASOURCE_NAME)
     private AtomikosDataSourceBean dataSource;
 
     private Class<T> entityClass;

@@ -96,7 +96,7 @@
 							<table width="100%" border="0" cellspacing="0" cellpadding="0">
 								<tr>
 									<td height="46" colspan="3" valign="top"><img
-										src="${_sysApplication_.goToUrl}/common/images/login_title2_${_amwayCss_}.gif" />
+										src="common/images/login_title2_basic_blue.gif" />
 									</td>
 								</tr>
 								<tr>

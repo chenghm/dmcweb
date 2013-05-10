@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+
+<!-- 加载struts文件 -->
+	<!-- <include file="classpath:struts-default.xml"></include>
+	<include file="classpath:struts-plugin.xml"></include> --> 
+
+	<constant name="struts.i18n.encoding" value="UTF-8" />
+	<constant name="struts.devMode" value="true" />
+	<!-- 加i18n配置文件 -->
+	<constant name="struts.custom.i18n.resources"
+		value="i18n.messages" />
+
+	<!-- 加struts配置文件 -->
+	<include file="core.xml"></include>
+	<!-- <include file="dmc.xml"></include> -->
+</struts>    

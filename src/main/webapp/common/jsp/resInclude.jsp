@@ -1,5 +1,5 @@
 <%@ taglib prefix="s" uri="/struts-tags"%>
-<%@ taglib prefix="amway" uri="/amway-tag"%>
+<%-- <%@ taglib prefix="amway" uri="/amway-tag"%> --%>
 <script type="text/javascript"
 	src="${_sysApplication_.goToUrl}/common/js/jquery-1.4.4.min.js"></script>
 <script type="text/javascript"

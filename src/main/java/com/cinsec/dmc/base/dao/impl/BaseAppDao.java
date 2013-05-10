@@ -46,12 +46,12 @@ public class BaseAppDao<T extends Object, PK extends Serializable> implements IB
         return t;
     }
 
-    @Resource(mappedName = AppConstant.DATASOURCE_NAME_APP)
+//    @Resource(mappedName = AppConstant.DATASOURCE_NAME_APP)
     private DataSource dataSource;
 
     private Class<T> entityClass;
 
-    @PersistenceContext(unitName = AppConstant.JPA_DB_UNIT_APP)
+//    @PersistenceContext(unitName = AppConstant.JPA_DB_UNIT_APP)
     private EntityManager entityManager;
 
     public BaseAppDao() {
